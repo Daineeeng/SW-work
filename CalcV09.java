@@ -67,11 +67,6 @@ public class CalcV09 extends JFrame {
         public void actionPerformed(ActionEvent e) {
             String leftNum, rightNum, oper="";
 
-            //0번째에서 마지막까지 한 char로 읽어서
-            //숫자면 leftNum에 add
-            //operator만 오른쪽에 add
-            //이후숫자면 rightNum에 add
-
             for (int i = 0; i < 17; i++) {
                 if (e.getSource() == Button[i] && e.getSource()!=Button[11]) {
                     if (operYN(buttonVal[i].toCharArray()[0]))
